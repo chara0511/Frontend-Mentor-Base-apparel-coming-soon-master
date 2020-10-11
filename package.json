@@ -1,0 +1,15 @@
+{
+  "name": "base-apparel-coming-soon-master",
+  "version": "1.0.0",
+  "description": "landing page using tailwindcss",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chara-",
+  "license": "ISC",
+  "dependencies": {
+    "save-dev": "0.0.1-security",
+    "tailwindcss": "^1.8.13"
+  }
+}
