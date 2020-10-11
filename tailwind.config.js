@@ -8,6 +8,11 @@ module.exports = {
   purge: [],
   theme: {
     extend: {
+      backgroundImage: {
+        "hero-mobile": "url('/images/hero-mobile.jpg')",
+        "hero-desktop": "url('/images/hero-desktop.jpg')",
+        ...defaultTheme.backgroundImage,
+      },
       screens: {
         xs: "375px",
         "2xl": "1440px",

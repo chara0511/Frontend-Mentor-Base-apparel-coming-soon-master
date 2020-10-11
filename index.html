@@ -25,37 +25,47 @@
   </style>
 </head>
 
-<body>
+<body class=" h-screen">
 
-  <nav class="flex items-center justify-between flex-wrap p-10"><img src="/icons/logo.svg" alt="logo"></nav>
 
-  <div class="bg-image">
-    image
-  </div>
+  <header class=" py-6 px-8"><img src="/icons/logo.svg" alt="logo"></header>
 
-  <main class="container mx-auto">
+  <main class="container mx-auto  flex flex-col justify-between">
     <div>
-      <h1>We're coming soon</h1>
-
-
-      <p>Hello fellow shoppers! We're currently building our new fashion store.
-        Add your email below to stay up-to-date with announcements and our launch deals.
-      </p>
+      <img src="/images/hero-mobile.jpg" alt="hero-mobile">
     </div>
 
-    <form>
-      <input type="text" placeholder="email address">
+    <div class="px-8 my-10 text-red-dark_grayish">
+      <div>
+        <h1 class="text-center text-5xl uppercase leading-none font-semibold tracking-widest text-red-dark_grayish">
+          <span class="font-light text-red-desaturated">We're</span>
+          coming soon</h1>
 
-      <button type="submit"><img src="/icons/icon-arrow.svg" alt="icon-arrow"></button>
-    </form>
+
+        <p class="my-5 text-red-desaturated text-center text-sm">Hello fellow shoppers! We're currently building
+          our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
+        </p>
+      </div>
+
+      <form class="relative">
+        <input
+          class="w-full h-12 my-3 border-solid border border-red-desaturated rounded-full placeholder-red-desaturated opacity-50 px-5 outline-none focus:opacity-100 "
+          type="email" placeholder="Email Address">
+
+        <button
+          class="absolute right-0 w-16 h-12 my-3 rounded-full py-2 px-4 bg-gradient-to-r from-red-desatured_gradient to-red-soft_gradient text-center"
+          type="submit"><img src="/icons/icon-arrow.svg" alt="icon-arrow"></button>
+      </form>
+    </div>
   </main>
 
-  <footer>
-    <p class="attribution">
+  <footer class="relative h-8 ">
+    <p class="attribution absolute inset-x-0 bottom-0">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="#">Chara-</a>.
     </p>
   </footer>
+
 </body>
 
 </html>
