@@ -15,3 +15,4 @@
 .DS_Store
 /design
 /node_modules
+.vercel
