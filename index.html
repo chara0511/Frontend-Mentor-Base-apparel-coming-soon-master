@@ -28,52 +28,58 @@
 <body>
 
   <div class="relative h-screen">
-    <header class="py-6 px-8 2xl:px-40 2xl:py-20 2xl:mr-5/12">
+    <header class="py-6 px-8 sm:px-16 md:px-20 lg:px-24 2xl:px-40 2xl:py-20 2xl:mr-5/12">
       <img src="/icons/logo.svg" alt="logo">
     </header>
 
-    <main class="mx-auto flex flex-col 2xl:flex-row-reverse justify-between">
+    <main class="mx-auto flex flex-col lg:flex-row-reverse justify-between">
       <div
-        class="w-full h-64 2xl:h-screen bg-hero-mobile bg-no-repeat bg-center 2xl:bg-cover 2xl:bg-hero-desktop 2xl:absolute 2xl:inset-y-0 right-0 2xl:w-5/12">
+        class="w-full h-64 lg:h-screen bg-hero-mobile bg-no-repeat bg-center lg:bg-cover lg:bg-hero-desktop lg:absolute lg:inset-y-0 right-0 lg:w-5/12">
       </div>
 
       <div
-        class="px-8 2xl:pt-10 2xl:pb-32 2xl:px-40 my-10 2xl:my-0 text-center 2xl:text-left text-red-dark_grayish 2xl:w-full 2xl:mr-5/12">
+        class="px-8 sm:px-16 md:px-20 lg:pt-10 lg:pb-24 lg:px-24 2xl:px-40 my-10 2xl:my-0 text-center lg:text-left text-red-dark_grayish 2xl:w-full lg:mr-5/12">
         <div>
-          <h1 class="text-5xl 2xl:text-6xl uppercase leading-none font-semibold tracking-widest text-red-dark_grayish">
+          <h1 class="text-5xl lg:text-6xl uppercase leading-none font-semibold tracking-widest text-red-dark_grayish">
             <span class="font-light text-red-desaturated">We're</span>
             coming soon
           </h1>
 
-          <p class="my-5 text-red-desaturated text-sm 2xl:text-xl">
+          <p class="my-5 text-red-desaturated text-sm lg:text-xl">
             Hello fellow shoppers! We're currently building
             our new fashion store.
             Add your email below to stay up-to-date with announcements and our launch deals.
           </p>
         </div>
 
-        <form class="relative">
-          <input
+        <form id="submit" class="relative" novalidate>
+          <input id="emailField"
             class="w-full h-12 my-3 border-solid border border-red-desaturated rounded-full placeholder-red-desaturated opacity-50 px-5 outline-none focus:opacity-100 "
-            type="email" placeholder="Email Address">
+            type="email" name="email" placeholder="Email Address">
+
+          <div id="errorMessage" class=" h-8"></div>
 
           <button
-            class="absolute right-0 w-16 2xl:w-24 h-12 my-3 rounded-full  bg-gradient-to-r from-red-desatured_gradient to-red-soft_gradient text-center shadow-normal transition-all 
+            class="absolute inset-y-0 right-0 w-16 lg:w-20 2xl:w-24 h-12 my-3 rounded-full  bg-gradient-to-r from-red-desatured_gradient to-red-soft_gradient text-center shadow-normal transition-all 
               duration-500 ease-in-out hover:from-red-desaturated_hover hover:to-red-desaturated_hover hover:shadow-active"
             type="submit">
             <img class="w-16 h-6 px-6 transform hover:scale-75" src="/icons/icon-arrow.svg" alt="icon-arrow">
           </button>
         </form>
+
+
       </div>
     </main>
 
-    <footer class="w-full h-8 2xl:w-7/12 ">
+    <footer class="w-full h-6 lg:w-7/12 ">
       <p class="attribution ">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
         Coded by <a href="https://github.com/jcarlos0511" target="_blank">Chara-</a>.
       </p>
     </footer>
   </div>
+
+  <script src="/js/index.js"></script>
 
 </body>
 
