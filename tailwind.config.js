@@ -18,13 +18,6 @@ module.exports = {
         active: "0px 10px 10px 0px rgba(250, 210, 210)",
         ...defaultTheme.boxShadow,
       },
-      screens: {
-        xs: "375px",
-        "2xl": "1440px",
-      },
-      fontFamily: {
-        sans: ["Josefin Sans", ...defaultTheme.fontFamily.sans],
-      },
       colors: {
         red: {
           desaturated: "#CE9696",
@@ -35,6 +28,18 @@ module.exports = {
           dark_grayish: "#403939",
           ...defaultTheme.colors.red,
         },
+      },
+      fontFamily: {
+        sans: ["Josefin Sans", ...defaultTheme.fontFamily.sans],
+      },
+      screens: {
+        xs: "375px",
+        "2xl": "1440px",
+      },
+      spacing: {
+        "5/12": "41.666667%",
+        "7/12": "58.333333%",
+        ...defaultTheme.spacing,
       },
     },
   },
